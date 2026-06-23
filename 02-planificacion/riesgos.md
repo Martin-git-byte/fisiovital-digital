@@ -1,0 +1,14 @@
+# Plan de gestión de riesgos
+
+| ID | Riesgo | Categoría | Probabilidad | Impacto | Respuesta |
+|---|---|---|---|---|---|
+| R1 | Retraso en la definición del contrato de API entre Backend y Frontend, bloqueando el desarrollo de interfaz | Técnico | Media | Alta | Mitigar: cerrar el contrato de API en OpenAPI antes de iniciar las pantallas dependientes (Ejercicio 2.6) |
+| R2 | Necesidad futura de integración con sistemas externos (laboratorio, pasarela de facturación, etc.) no contemplada en el alcance actual | Técnico | Media | Media | Aceptar/Monitorizar: documentar como fuera de alcance en el Project Charter; revisar si surge una solicitud concreta |
+| R3 | Falta de datos de prueba representativos o indisponibilidad del único QA del equipo | QA | Media | Alta | Mitigar: generar datos de prueba sintéticos desde el inicio; documentar el plan de pruebas para que pueda ser ejecutado por otro rol si es necesario |
+| R4 | Cobertura de pruebas insuficiente en el módulo de Facturación por presión de plazos | QA | Media | Alta | Mitigar: priorizar pruebas de Facturación sobre otros módulos menos críticos, según el plan de pruebas |
+| R5 | Cambio de proveedor cloud o fallo en la política de copias de seguridad/recuperación | DevOps | Baja | Alta | Mitigar: definir política de backups desde el Ejercicio 2.0 y documentar el proceso de recuperación |
+| R6 | Presupuesto insuficiente para mantener un entorno de pre-producción además de desarrollo y producción | DevOps | Media | Media | Aceptar: mantener solo desarrollo y producción si el presupuesto lo exige, documentando la decisión en un ADR |
+| R7 | Aparición de nuevos requisitos legales o funcionales durante el proyecto, ampliando el alcance acordado | Alcance | Media | Alta | Mitigar: cualquier requisito nuevo pasa por evaluación de impacto en plazo/presupuesto antes de aceptarse (control de cambios) |
+| R8 | Cambios en el RGPD o en requisitos de protección de datos sanitarios durante el desarrollo | Normativo | Baja | Alta | Mitigar: diseñar el módulo de Historial Clínico con principios de privacidad por diseño, facilitando adaptarse a cambios normativos |
+| R9 | Resistencia al cambio del personal de recepción (~20 años trabajando en papel) | Equipo/Recursos | Alta | Media | Mitigar: plan de formación y acompañamiento en la adopción, con Ana como punto de contacto operativo |
+| R10 | Indisponibilidad de personal clave del cliente (Marta o Ana) durante hitos críticos de validación | Equipo/Recursos | Baja | Media | Aceptar/Monitorizar: definir puntos de validación con antelación en el cronograma para minimizar bloqueos |
