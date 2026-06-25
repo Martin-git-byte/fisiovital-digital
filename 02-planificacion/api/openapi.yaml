@@ -1,0 +1,106 @@
+openapi: 3.0.0
+info:
+  title: API FisioVital Digital
+  version: "1.0"
+  description: Contrato de API para los módulos de Citas y Facturación
+
+paths:
+  /citas:
+    get:
+      summary: Listar citas
+      responses:
+        "200":
+          description: Lista de citas
+    post:
+      summary: Crear una nueva cita
+      responses:
+        "201":
+          description: Cita creada
+
+  /citas/{id}:
+    get:
+      summary: Obtener el detalle de una cita
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Detalle de la cita
+    put:
+      summary: Modificar una cita
+      responses:
+        "200":
+          description: Cita modificada
+    delete:
+      summary: Cancelar una cita
+      responses:
+        "204":
+          description: Cita cancelada
+
+  /facturas:
+    get:
+      summary: Listar facturas
+      responses:
+        "200":
+          description: Lista de facturas
+    post:
+      summary: Generar una factura
+      responses:
+        "201":
+          description: Factura generada
+
+  /facturas/{id}/pagar:
+    patch:
+      summary: Marcar una factura como pagada
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Factura marcada como pagada
+
+components:
+  schemas:
+    Cita:
+      type: object
+      properties:
+        id:
+          type: string
+        fecha:
+          type: string
+          format: date
+        hora:
+          type: string
+        clinicaId:
+          type: string
+        pacienteId:
+          type: string
+        fisioterapeutaId:
+          type: string
+        estado:
+          type: string
+          enum: [pendiente, confirmada, cancelada, completada]
+    Factura:
+      type: object
+      properties:
+        id:
+          type: string
+        citaId:
+          type: string
+        importe:
+          type: number
+        tipoPago:
+          type: string
+          enum: [particular, seguro]
+        fechaEmision:
+          type: string
+          format: date
+        estadoPago:
+          type: string
+          enum: [pendiente, pagada]
