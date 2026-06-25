@@ -1,7 +1,7 @@
 # Guion de presentación final
 
 ## 1. Resumen del proyecto (1 min)
-FisioVital Digital es un sistema de gestión documental para 5 clínicas de fisioterapia, desarrollado en 13 semanas bajo el curso IFCT055PO. Cubre autenticación, citas, historial clínico, facturación mixta (particular/seguro) y administración/informes, con arquitectura monolítica modular. El proyecto se cerró con una semana de retraso y un 5% sobre presupuesto, ambos justificados y documentados.
+FisioVital Digital es un sistema de gestión documental para 5 clínicas de fisioterapia, desarrollado en 13 semanas. Cubre autenticación, citas, historial clínico, facturación mixta (particular/seguro) y administración/informes, con arquitectura monolítica modular. El proyecto se cerró con una semana de retraso y un 5% sobre presupuesto, ambos justificados y documentados.
 
 ## 2. Recorrido por el repositorio (3 min)
 - **Commits destacados:** desde el primer README (Sesión 1) hasta el postmortem (Sesión 4), con mensajes descriptivos siguiendo convención `docs(fase): descripción`.
