@@ -18,4 +18,4 @@ Se modificó una variable de entorno de conexión a la base de datos sin probarl
 Se revirtió la variable de entorno a su configuración anterior, restableciendo el acceso. Se perdió un día completo de pruebas de QA, que deberá reprogramarse.
 
 ## Issue relacionado
-#4
+#5
