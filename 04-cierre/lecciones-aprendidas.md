@@ -1,0 +1,8 @@
+# Registro de lecciones aprendidas
+
+| Fase | Lección positiva | Lección de mejora | Acción recomendada |
+|---|---|---|---|
+| Inicio | El acta de descubrimiento con preguntas estructuradas (presupuesto, plazo, usuarios) dio una base sólida para el Project Charter | El criterio de éxito sobre facturación mixta no anticipó la dificultad real del módulo | Profundizar más en la complejidad técnica de cada criterio de éxito antes de cerrar el Charter |
+| Planificación | El ADR de arquitectura y el reparto de módulos por rol evitaron ambigüedades de responsabilidad durante la ejecución | El contrato de API se cerró tarde respecto a cuándo Frontend lo necesitaba, generando arranques en cascada | Cerrar el contrato de API como primer entregable de la planificación, no como último ejercicio de la sesión |
+| Ejecución | El plan de pruebas basado en el contrato OpenAPI permitió cubrir casos límite reales, no solo el camino feliz | Backend subestimó la duración de Facturación por su complejidad real (pago mixto); además, un cambio de configuración sin validar tiró pre-producción 14 horas | Incluir validación técnica más profunda en la estimación de módulos complejos; prohibir cambios de configuración sin probar antes en local (regla ya incorporada al pipeline tras INC-001) |
+| Cierre | El repositorio de GitHub permitió trazar todo el ciclo de vida del proyecto con evidencia objetiva (commits, PRs, Issues, tags) | Las condiciones de aceptación del cliente (seguimiento de facturas de seguro) deberían haberse anticipado durante la ejecución, no solo detectarse al cierre | Incorporar revisiones de aceptación parciales con el cliente al cierre de cada módulo, no solo al final del proyecto |
