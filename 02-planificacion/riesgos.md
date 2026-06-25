@@ -12,3 +12,4 @@
 | R8 | Cambios en el RGPD o en requisitos de protección de datos sanitarios durante el desarrollo | Normativo | Baja | Alta | Mitigar: diseñar el módulo de Historial Clínico con principios de privacidad por diseño, facilitando adaptarse a cambios normativos |
 | R9 | Resistencia al cambio del personal de recepción (~20 años trabajando en papel) | Equipo/Recursos | Alta | Media | Mitigar: plan de formación y acompañamiento en la adopción, con Ana como punto de contacto operativo |
 | R10 | Indisponibilidad de personal clave del cliente (Marta o Ana) durante hitos críticos de validación | Equipo/Recursos | Baja | Media | Aceptar/Monitorizar: definir puntos de validación con antelación en el cronograma para minimizar bloqueos |
+| R11 | Cambios en configuración/variables de entorno aplicados sin validación previa en local | DevOps | Media | Alta | Mitigar: exigir validación en entorno local antes de aplicar cualquier cambio de configuración en pre-producción |
